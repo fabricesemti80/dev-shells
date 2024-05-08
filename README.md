@@ -5,17 +5,17 @@
 To initialize (where `${ENV}` is listed in the table below):
 
 ```shell
-nix flake init --template github:the-nix-way/dev-templates#${ENV}
+nix flake init --template github:fabricesemti80/dev-shells#${ENV}
 ```
 
-Here's an example (for the [`rust`](./rust) template):
+Here's an example (for the [`terraform`](./terraform) template):
 
 ```shell
 # Initialize in the current project
-nix flake init --template github:the-nix-way/dev-templates#rust
+nix flake init --template github:fabricesemti80/dev-shells#terraform
 
 # Create a new project
-nix flake new --template github:the-nix-way/dev-templates#rust ${NEW_PROJECT_DIRECTORY}
+nix flake new --template github:fabricesemti80/dev-shells#terraform ${NEW_PROJECT_DIRECTORY}
 ```
 
 ## How to use the templates
@@ -57,7 +57,8 @@ Once your preferred template has been initialized, you can use the provided shel
 | [Ruby]                   | [`ruby`](./ruby/)             |
 | [Rust]                   | [`rust`](./rust/)             |
 | [Scala]                  | [`scala`](./scala/)           |
-| [Shell]                  | [`shell`](./shell/)           |
+| [Shell]                  | [`shell`](./shell/)  
+| [Terraform] tools        | [`terraform`](./terraform/)   |
 | [Vlang]                  | [`vlang`](./vlang/)           |
 | [Zig]                    | [`zig`](./zig/)               |
 

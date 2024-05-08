@@ -61,7 +61,7 @@
                   --experimental-features 'nix-command flakes' \
                   flake init \
                   --template \
-                  "github:the-nix-way/dev-templates#''${TEMPLATE}"
+                  "github:fabricesemti80/dev-shells#''${TEMPLATE}"
               '';
             };
 
@@ -245,6 +245,11 @@
           path = ./shell;
           description = "Shell script development environment";
         };
+
+        terraform = {
+          path = ./terraform;
+          description = "Terraform development environment";
+        };        
 
         vlang = {
           path = ./vlang;
