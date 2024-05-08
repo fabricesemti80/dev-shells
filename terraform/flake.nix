@@ -20,7 +20,7 @@
             terraform
             tflint
             # nomad
-            vault-cli
+            vault-bin
             # nomad-autoscaler
             # nomad-pack
             # levant
