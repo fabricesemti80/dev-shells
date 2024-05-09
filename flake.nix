@@ -96,7 +96,12 @@
 
     {
       templates = rec {
-       
+
+        ansible = {
+          path = ./ansible;
+          description = "Empty dev template that you can customize at will";
+        };
+
         empty = {
           path = ./empty;
           description = "Empty dev template that you can customize at will";

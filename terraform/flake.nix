@@ -16,16 +16,14 @@
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            # packer
-            terraform
-            tflint
-            # nomad
-            vault-bin
-            # nomad-autoscaler
-            # nomad-pack
-            # levant
-            # damon
-            terragrunt
+            aws-azure-login # Terraform uses this to allow access to state files
+            awscli2 # Terraform uses this to allow access to state files
+            terraform # Deployment automation
+            tflint # terraform linter
+            terragrunt # terraform wrapper
+
+            google-cloud-sdk # Required for accesing Vault
+            vault-bin # Vault CLI for secret management
           ];
         };
       });
